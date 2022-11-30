@@ -96,7 +96,7 @@ class KategoriController implements ControllerInterface
             }else{
                 Session::flash('error',"Gagal Edit");
             }
-            return redirect()->route('categories.index');
+            return redirect()->route('kategori.index');
         } catch (\Throwable $th) {
             Session::flash('error',"Periksa kembali isian");
             return redirect()->back();
